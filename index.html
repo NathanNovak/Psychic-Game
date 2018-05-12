@@ -1,46 +1,62 @@
 <!doctype.<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Psychic-Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" /> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Acme|Indie+Flower|Skranji" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Fjalla+One|Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 
 </head>
+
 <body class="body">
 
-        <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                  <h1 class="display-4">The Psychic Game</h1>
-                  <p class="lead">Press the button below to start and guess a letter of the word I am thinking of</p>
-                  <button onclick="playGame()" type="button" class="btn btn-primary btn-lg">START</button>
+    <div class="jumbotron-1 jumbotron jumbotron-fluid">
 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="inner-text col-md-8">
+                    <h1 class="display-4" style="font-size: 92px;">The Psychic Game</h1>
+                    <p class="lead">Press the "Start" button below to start to show and guess a letters of the word I am thinking of</p>
+                    <button onclick="playGame()" type="button" class="btn btn-primary btn-lg">START</button>
                 </div>
-              </div>
-    
-    <h3>What you have guessed so far:</h3>
+                <div class="col-md-2"></div>
+            </div>
 
-<h1>Here is the word!</h1>
-    <p id="correctLetters"></p>
-<h2>Guesses Left</h2>
-    <p id="guessesLeft"></p>
 
-<h2>Letters Guessed</h2>
-    <p id="lettersGuessed"></p>
+        </div>
+    </div>
 
-Wins: <span id="wins"></span><br>
-Losses: <span id="losses"></span>
+    <div class="lower-text">
+        <h1>Here is the word!</h1>
+        <p id="correctLetters"></p>
+        <h2>Guesses Left</h2>
+        <p id="guessesLeft"></p>
 
-    
+        <h2>Letters Guessed</h2>
+        <p id="lettersGuessed"></p>
+        Wins:
+        <span id="wins"></span>
+        <br> Losses:
+        <span id="losses"></span>
+    </div>
+
+
+
 </body>
 
 <script src="assets/javascript/javascript.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-</html>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
 
+</html>

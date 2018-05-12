@@ -73,12 +73,13 @@ function playGame() {
                 //game ends when user runs out of guesses or guesses the word
                 if (answerArray.indexOf("_") === -1) {
                     wins++;
-                    document.getElementById("wins").innerHTML = wins;                     
+                    document.getElementById("wins").innerHTML = wins; 
+                    alert("YOU WIN!!")                    
                 }
                 else if (guesses === 0){
                     losses++;
                     document.getElementById("losses").innerHTML = losses;
-                    console.log("GameOver"); 
+                    alert("GameOver"); 
                     
                 }
             }
